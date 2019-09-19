@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6f69b6;
+    line-height: 1.6;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #6f69b6;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.brand {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.login-msg {
+    text-align: center;
+}
+
+img {
+    display: none;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > * {
+    padding: 1em;
+}
+
+.contact {
+    background-color: #fff;
+    color: #000;
+}
+
+.contact h2 {
+    text-align: center;
+    font-weight: 400;
+    padding: 0 0 1rem 0;
+}
+
+/*div STYLES*/
+
+.contact div  label {
+    display: block;
+}
+
+.contact div button, .contact div input {
+    width: 100%;
+    padding: 1em;
+}
+
+.contact div .btn-login {
+    background-color:#6f69b6;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.contact div .btn-signup {
+    background-color: #fff;
+    border: 1px solid #6f69b6;
+    border-radius: 5px;
+}
+
+.contact div .anchor {
+    text-align: center;
+}
+
+
+.contact div input {
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact div .btn-signup:hover, .contact div .btn-signup:focus {
+    background-color: #6f69b6;
+    color: #fff;
+}
+
+.contact div input:focus {
+    box-shadow: 0 0 4px 0 #6f69b6;
+} 
+
+.contact div input, .btn-login {
+    margin: 10px 0;
+}
+
+
+/*LARGE SCREENS */
+
+@media(min-width:700px) {
+    .wrapper {
+        display: block;
+        float: right;
+        width: 500px;
+    }
+
+    .wrapper > * {
+        padding: 2em;
+    }
+
+    .direct-msg {
+        float: left;
+        width: 
+    }
+
+    .brand, .login-msg {
+        text-align: left;
+    }  
+
+    .brand {
+        font-size: 32px;
+    }
+
+    .login-msg {
+        font-size: 18px;
+    }
+
+    img {
+        display: block;
+    }
+}
